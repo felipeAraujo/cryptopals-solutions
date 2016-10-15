@@ -2,6 +2,7 @@ import unittest
 
 import challenge01
 import challenge02
+import challenge03
 
 class Set1_Challenges_Test_Cases(unittest.TestCase):
     """
@@ -21,6 +22,12 @@ class Set1_Challenges_Test_Cases(unittest.TestCase):
                 '686974207468652062756c6c277320657965'
             ),
             '746865206b696420646f6e277420706c6179'
+        )
+
+    def test_cg03_singlebyte_xor_cipher(self):
+        self.assertEqual(
+            challenge03.cg03_single_byte_xor_cipher('1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'),
+            "Cooking MC's like a pound of bacon"
         )
 
 if __name__ == '__main__':
